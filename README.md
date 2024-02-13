@@ -11,6 +11,4 @@
 
 [formal-elements](formal-elements.md)
 
-<img width="542" alt="Messy House GamePlay2" src="https://github.com/alon-game/Messy-House/assets/73320761/a7270552-ffc3-42c7-a127-fbf2e458a3ea">
 
-<img width="544" alt="Messy House GamePlay3" src="https://github.com/alon-game/Messy-House/assets/73320761/50837cd4-7343-46d5-b004-23a01660de38">
