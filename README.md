@@ -1,5 +1,4 @@
 # Messy house 
-
 <img width="543" alt="Messy House GamePlay" src="https://github.com/alon-game/Messy-House/assets/73320761/12bcbfd1-a64a-442d-a8ae-f47f16c872c8">
 
 **לסדר את הבית בכיף - משחק מהנה לכל המשפחה**
