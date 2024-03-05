@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectGrabbable : MonoBehaviour
 {
@@ -18,8 +19,11 @@ public class ObjectGrabbable : MonoBehaviour
     {
         this.objectGrabPointTransform = objectGrabPointTransform; // transform of the object grap point 
         objectRigidbody.useGravity = false; // disable object gravity when grabbing
-        objectArrow.GetComponent<MeshRenderer>().enabled = false; // disable object arrow Mesh and enable placement arrow Mesh for tutorial mode
-        placementArrow.GetComponent<MeshRenderer>().enabled = true;
+        if (SceneManager.GetActiveScene().name == "Tutorial")
+        {
+            objectArrow.GetComponent<MeshRenderer>().enabled = false; // disable object arrow Mesh and enable placement arrow Mesh for tutorial mode
+            placementArrow.GetComponent<MeshRenderer>().enabled = true;
+        }
 
     }
 

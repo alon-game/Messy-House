@@ -13,6 +13,7 @@ TagManager:
   - Points
   - Garbage
   - Fruit
+  - Timer
   layers:
   - Default
   - TransparentFX

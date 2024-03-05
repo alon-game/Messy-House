@@ -4,15 +4,27 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerPickUpDrop : MonoBehaviour
 {
-    [SerializeField] private InputAction test;
+    [SerializeField] private InputAction grabAndDropButton = new InputAction(type: InputActionType.Button);
     [SerializeField] private Transform playerCameraTransform; // player camera transform
     [SerializeField] private Transform objectGrabPointTransform; 
     [SerializeField] private LayerMask pickUpLayerMask; // Defining the layer of objects that can be picked up and drop
 
     private ObjectGrabbable objectGrabbable;
+
+    void OnEnable()
+    {
+        grabAndDropButton.Enable();
+    }
+
+    void OnDisable()
+    {
+        grabAndDropButton.Disable();
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // if the spece button is press
+        if (grabAndDropButton.WasPressedThisFrame())
+        //if (grabAndDropButton.)
+        //if (Input.GetKeyDown(KeyCode.Space)) // if the spece button is press
         {
             if (objectGrabbable == null)
             { 
