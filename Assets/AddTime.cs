@@ -17,7 +17,7 @@ public class AddTime : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            timer.AddTime(30);
+            timer.AddTime(30f);
             gameObject.SetActive(false);
             feedbackMessageUI.SetActive(true); // Enable the feedback message for the player
             Invoke("SetInactiveUI", 2f); // Disable the feedback message afer 2 seconds
