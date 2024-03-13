@@ -41,6 +41,8 @@ public class PlacementArea : MonoBehaviour
                     grabbable.SetObjectInPlace(true); // Set the state of the object to in place
                     feedbackMessageUI.SetActive(true); // Enable the feedback message for the player
                     Invoke("SetInactiveUI", 2f); // Disable the feedback message afer 2 seconds
+                    // Call function to hide the object after a delay
+                    HideObjectAfterDelay(grabbable, 5f); // Hide the object after 5 seconds
                     SceneLoader.Instance.LoadNextScene(); // load the next scene
                 }
             }
@@ -52,4 +54,20 @@ public class PlacementArea : MonoBehaviour
     {
         feedbackMessageUI.SetActive(false);
     }
+
+    // Function to hide the object after a delay
+    private void HideObjectAfterDelay(ObjectGrabbable grabbable, float delay)
+    {
+        StartCoroutine(HideObjectDelayed(grabbable, delay));
+    }
+
+    // Coroutine to hide the object after a delay
+    private IEnumerator HideObjectDelayed(ObjectGrabbable grabbable, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        // Hide the object
+        grabbable.gameObject.SetActive(false);
+    }
+
+
 }

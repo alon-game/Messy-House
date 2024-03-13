@@ -8,7 +8,6 @@ public class PlayerPickUpDrop : MonoBehaviour
     [SerializeField] private Transform playerCameraTransform; // player camera transform
     [SerializeField] private Transform objectGrabPointTransform; 
     [SerializeField] private LayerMask pickUpLayerMask; // Defining the layer of objects that can be picked up and drop
-
     private ObjectGrabbable objectGrabbable;
 
     void OnEnable()
