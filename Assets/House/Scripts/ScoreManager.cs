@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField] Text scoreText; // Score Text Field 
+    [SerializeField] Text scoreText; // Score Text Field
+    //[SerializeField] int maxScore;
     private static int score = 0; // Score field
 
     private void Update()

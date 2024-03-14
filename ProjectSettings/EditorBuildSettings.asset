@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/House/Scenes/Tutorial.unity
     guid: 0bce5907d797a4cd8b0660dc119867e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/House/Scenes/Level 1.unity
     guid: d7b7798dcf7fd174a8947ff97405668c
+  - enabled: 1
+    path: Assets/House/Scenes/Bathroom.unity
+    guid: 150ea0cecf29bb14087f1312f5d2de5a
+  - enabled: 1
+    path: Assets/House/Scenes/Bedroom.unity
+    guid: 5788d4301ddbb524ca4c1676c5bef75c
+  - enabled: 1
+    path: Assets/House/Scenes/Living Room.unity
+    guid: 19fc6f2d4a935be4789f459baf66c8c0
   m_configObjects: {}
