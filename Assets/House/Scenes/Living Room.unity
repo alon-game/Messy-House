@@ -1233,6 +1233,7 @@ GameObject:
   - component: {fileID: 300429582}
   - component: {fileID: 300429581}
   - component: {fileID: 300429580}
+  - component: {fileID: 300429583}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Level Manager
@@ -1282,6 +1283,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300429583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300429579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3161df05a96f046afd5a65d792689f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 1206854783}
+  remainingTime: 120
+  warningTime: 30
 --- !u!1001 &305192038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4627,7 +4643,6 @@ GameObject:
   - component: {fileID: 1206854785}
   - component: {fileID: 1206854784}
   - component: {fileID: 1206854783}
-  - component: {fileID: 1206854786}
   m_Layer: 5
   m_Name: Timer Text
   m_TagString: Timer
@@ -4751,20 +4766,6 @@ RectTransform:
   m_AnchoredPosition: {x: 99.99994, y: -34.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1206854786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206854782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b3161df05a96f046afd5a65d792689f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 1206854783}
-  remainingTime: 120
 --- !u!1 &1208883402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4916,6 +4917,29 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
+--- !u!136 &1219508861
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219508854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 22.40194
+  m_Height: 76.684326
+  m_Direction: 2
+  m_Center: {x: 4.75, y: 3.36, z: 4.240358}
 --- !u!1 &1231964240
 GameObject:
   m_ObjectHideFlags: 0
@@ -6207,6 +6231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1206854783}
   remainingTime: 120
+  warningTime: 30
 --- !u!1001 &1455934864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6864,11 +6889,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.144
+      value: 0.223
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.181
+      value: 0.264
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6915,6 +6940,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1219508858}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219508861}
   m_SourcePrefab: {fileID: 100100000, guid: fb6144750c8626e4ebbd22c0e4ac2b5d, type: 3}
 --- !u!4 &1552983097 stripped
 Transform:
@@ -7923,7 +7951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1760064892
 RectTransform:
   m_ObjectHideFlags: 0

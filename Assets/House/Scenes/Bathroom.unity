@@ -1647,7 +1647,6 @@ GameObject:
   - component: {fileID: 1206854785}
   - component: {fileID: 1206854784}
   - component: {fileID: 1206854783}
-  - component: {fileID: 1206854786}
   m_Layer: 5
   m_Name: Timer Text
   m_TagString: Timer
@@ -1771,20 +1770,6 @@ RectTransform:
   m_AnchoredPosition: {x: 99.99994, y: -34.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1206854786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206854782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b3161df05a96f046afd5a65d792689f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 1206854783}
-  remainingTime: 120
 --- !u!1 &1208883402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,6 +2163,7 @@ GameObject:
   - component: {fileID: 1406138278}
   - component: {fileID: 1406138279}
   - component: {fileID: 1406138280}
+  - component: {fileID: 1406138281}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Level Manager
@@ -2227,6 +2213,21 @@ MonoBehaviour:
   scoreText: {fileID: 1077866056}
   maxScore: 6
   panel: {fileID: 91307963}
+--- !u!114 &1406138281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406138277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3161df05a96f046afd5a65d792689f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 1206854783}
+  remainingTime: 120
+  warningTime: 30
 --- !u!1 &1414566752
 GameObject:
   m_ObjectHideFlags: 0
