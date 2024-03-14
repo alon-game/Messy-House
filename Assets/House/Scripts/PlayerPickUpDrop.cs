@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,8 +23,6 @@ public class PlayerPickUpDrop : MonoBehaviour
     void Update()
     {
         if (grabAndDropButton.WasPressedThisFrame())
-        //if (grabAndDropButton.)
-        //if (Input.GetKeyDown(KeyCode.Space)) // if the spece button is press
         {
             if (objectGrabbable == null)
             { 

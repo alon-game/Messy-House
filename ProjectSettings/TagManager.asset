@@ -15,6 +15,7 @@ TagManager:
   - Fruit
   - Timer
   - laundry
+  - Level Manager
   layers:
   - Default
   - TransparentFX

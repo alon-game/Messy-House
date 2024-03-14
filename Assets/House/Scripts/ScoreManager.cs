@@ -6,12 +6,26 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField] Text scoreText; // Score Text Field
-    //[SerializeField] int maxScore;
+    [SerializeField] int maxScore;
+    [SerializeField] GameObject panel;
     private static int score = 0; // Score field
+
+    void Start()
+    {
+        panel.SetActive(false); 
+        ResetScore();
+    }
 
     private void Update()
     {
         scoreText.text = score.ToString() + " Points"; // update UI text score
+        // Check if the player reached the maxScore
+        if (score == maxScore)
+        {
+            OpenPanel(); // Open the panel
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
     public int GetScore() // return the score value
     {
@@ -28,5 +42,9 @@ public class ScoreManager : MonoBehaviour
         score += 1;
         Debug.Log("Score: " + score);
         scoreText.text = score.ToString() + " Points";
+    }
+    void OpenPanel()
+    {
+        panel.SetActive(true); // Open the panel
     }
 }

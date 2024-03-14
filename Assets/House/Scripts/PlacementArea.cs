@@ -12,7 +12,7 @@ public class PlacementArea : MonoBehaviour
 
     void Start()
     {
-        scoreManager = GameObject.FindGameObjectWithTag("Points").GetComponent<ScoreManager>(); // init score manager
+        scoreManager = GameObject.FindGameObjectWithTag("Level Manager").GetComponent<ScoreManager>(); // init score manager
         feedbackMessageUI.SetActive(false); // disable feedback message
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(objectGrabbableTag); // Get the list of objects belonging to the placement area
         foreach (GameObject obj in objectsWithTag)
@@ -43,7 +43,7 @@ public class PlacementArea : MonoBehaviour
                     Invoke("SetInactiveUI", 2f); // Disable the feedback message afer 2 seconds
                     // Call function to hide the object after a delay
                     HideObjectAfterDelay(grabbable, 5f); // Hide the object after 5 seconds
-                    SceneLoader.Instance.LoadNextScene(); // load the next scene
+                    //SceneLoader.Instance.LoadNextScene(); // load the next scene
                 }
             }
         }
