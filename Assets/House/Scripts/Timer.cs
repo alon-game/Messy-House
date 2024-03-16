@@ -8,9 +8,15 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
     [SerializeField] float warningTime = 30f;
+    private float totalTime;
     private Color warningColor = Color.red;
 
     private bool isWarningDisplayed = false;
+
+    private void Start()
+    {
+        totalTime = remainingTime;
+    }
 
     // Update is called once per frame
     void Update()
@@ -47,5 +53,15 @@ public class Timer : MonoBehaviour
     public void AddTime(float timeToAdd)
     {
         remainingTime += timeToAdd;
+    }
+
+    public float GetRemainingTime()
+    {
+        return remainingTime;
+    }
+
+    public float GetTotalTime()
+    {
+        return totalTime;
     }
 }
