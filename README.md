@@ -2,12 +2,6 @@
 
 # Messy house
 
-### Links:
-* [itch.io](https://alon5564.itch.io/messy-house-demo)
-* [formal-elements](formal-elements.md)
-
-
-![d7316058-8e1c-4bec-b9b9-ba0b55839f74](https://github.com/alon-game/Messy-House/assets/73320761/52394f59-bf98-4e47-bd7a-105dc446235c)
 
 **לסדר את הבית בכיף - משחק מהנה לכל המשפחה**
 
@@ -16,7 +10,11 @@
 מטרת המשחק היא סידור הבית תוך כדי עמידה בלוח הזמנים. עולם המשחק הוא ביתו של השחקן, כאשר ישנם חפצים מבולגנים שלא נמצאים במקומם. מטרת השחקן היא לסדר את כל הבית בטווח הזמנים שמוגדר לו, תוך כדי התחמקות ממכשולים (לדוגמא דלי שיכול להישפך ולגרום ליותר לכלוך ובכך יעכב את השחקן). המשחק מורכב משלבים כאשר בכל שלב רמת הקושי עולה.
 
 ---
+![d7316058-8e1c-4bec-b9b9-ba0b55839f74](https://github.com/alon-game/Messy-House/assets/73320761/52394f59-bf98-4e47-bd7a-105dc446235c)
 
+### Links:
+* [itch.io](https://alon5564.itch.io/messy-house-demo)
+* [formal-elements](formal-elements.md)
 
 ## רכיבים רשמיים
 
