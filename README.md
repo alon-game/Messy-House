@@ -13,7 +13,7 @@
 ![d7316058-8e1c-4bec-b9b9-ba0b55839f74](https://github.com/alon-game/Messy-House/assets/73320761/52394f59-bf98-4e47-bd7a-105dc446235c)
 
 ### Links:
-* [itch.io](https://alon5564.itch.io/messy-house-demo)
+* [itch.io](https://alon5564.itch.io/messy-house)
 * [formal-elements](formal-elements.md)
 
 ## רכיבים רשמיים
