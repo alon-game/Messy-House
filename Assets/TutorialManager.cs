@@ -6,7 +6,6 @@ public class TutorialManager : MonoBehaviour
 {
     [SerializeField] GameObject[] popUps;
     public int popUpIndex;
-    //private float waitTime = 2f;
 
     void Update()
     {
@@ -30,14 +29,21 @@ public class TutorialManager : MonoBehaviour
         }
         else if (popUpIndex == 1)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 popUpIndex++;
             }
         }
         else if (popUpIndex == 2)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                popUpIndex++;
+            }
+        }
+        else if (popUpIndex == 3)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 popUpIndex++;
             }

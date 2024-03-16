@@ -68,11 +68,14 @@ public class ScoreManager : MonoBehaviour
     private float scorePercentage;
     private static int score = 0; // Score field
     private Timer timer;
+    private PauseMenu pauseMenu;
 
     void Start()
     {
+        pauseMenu = GetComponent<PauseMenu>();
+        pauseMenu.Resume(); // resume the game 
         panel.SetActive(false);
-        ResetScore();
+        ResetScore(); // reset the score
         timer = GetComponent<Timer>();
     }
 
@@ -87,6 +90,7 @@ public class ScoreManager : MonoBehaviour
             OpenPanel(); // Open the panel
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            pauseMenu.Pause(); // stop the game
         }
     }
 

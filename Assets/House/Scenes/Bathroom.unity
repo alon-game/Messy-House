@@ -751,6 +751,10 @@ PrefabInstance:
       value: Arrow
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cefc91532efb98c4e97bd33d7bf1ddff, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cefc91532efb98c4e97bd33d7bf1ddff, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1324,7 +1328,7 @@ GameObject:
   - component: {fileID: 307693418}
   - component: {fileID: 307693417}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2265,9 +2269,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 591770452}
     m_Modifications:
+    - target: {fileID: 100000, guid: 3fe4d4223f78b1f4dbff9bdb004b3717, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3fe4d4223f78b1f4dbff9bdb004b3717, type: 3}
       propertyPath: m_Name
       value: LaundryBasket_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 3fe4d4223f78b1f4dbff9bdb004b3717, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 3fe4d4223f78b1f4dbff9bdb004b3717, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3fe4d4223f78b1f4dbff9bdb004b3717, type: 3}
       propertyPath: m_LocalScale.x
@@ -3152,6 +3168,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bb499e2476de5744d83ba18e588d90b9, type: 3}
       propertyPath: m_Name
       value: Trash
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bb499e2476de5744d83ba18e588d90b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bb499e2476de5744d83ba18e588d90b9, type: 3}
       propertyPath: m_TagString
@@ -4706,6 +4726,8 @@ GameObject:
   - component: {fileID: 1406138279}
   - component: {fileID: 1406138280}
   - component: {fileID: 1406138281}
+  - component: {fileID: 1406138282}
+  - component: {fileID: 1406138283}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Level Manager
@@ -4781,6 +4803,32 @@ MonoBehaviour:
   timerText: {fileID: 2031981564}
   remainingTime: 120
   warningTime: 30
+--- !u!114 &1406138282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406138277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47cdfe3885904524d86bda5fb17de050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1406138283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406138277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d119d0b48115a429b7e594b5c3331c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clockObject: {fileID: 1240066844}
+  timeToShowClock: 30
 --- !u!1 &1414566752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,7 +5425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseXInputName: Mouse X
   mouseYInputName: Mouse Y
-  mouseSensitivity: 30
+  mouseSensitivity: 15
   playerBody: {fileID: 1612233177}
 --- !u!81 &1512477153
 AudioListener:
@@ -5789,7 +5837,7 @@ CharacterController:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -5874,15 +5922,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 389d1289c1b1ee24db3830db91c58e94, type: 3}
       propertyPath: m_LocalScale.x
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 389d1289c1b1ee24db3830db91c58e94, type: 3}
       propertyPath: m_LocalScale.y
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 389d1289c1b1ee24db3830db91c58e94, type: 3}
       propertyPath: m_LocalScale.z
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 389d1289c1b1ee24db3830db91c58e94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5890,7 +5938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 389d1289c1b1ee24db3830db91c58e94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.637
+      value: 0.515
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 389d1289c1b1ee24db3830db91c58e94, type: 3}
       propertyPath: m_LocalPosition.z

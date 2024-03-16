@@ -10,8 +10,7 @@ public class Timer : MonoBehaviour
     [SerializeField] float warningTime = 30f;
     private float totalTime;
     private Color warningColor = Color.red;
-
-    private bool isWarningDisplayed = false;
+    private Color normalColor = Color.white; // timer color text
 
     private void Start()
     {
@@ -43,10 +42,13 @@ public class Timer : MonoBehaviour
 
     void CheckWarning()
     {
-        if (remainingTime <= warningTime && !isWarningDisplayed)
+        if (remainingTime <= warningTime)
         {
-            timerText.color = warningColor;
-            isWarningDisplayed = true;
+            timerText.color = warningColor; // change the color to red
+        }
+        else if (remainingTime > warningTime)
+        {
+            timerText.color = normalColor; // change the color to white
         }
     }
 
