@@ -1,6 +1,11 @@
 <div dir='rtl' lang='he'>
 
-# Messy house 
+# Messy house
+
+### Links:
+* [itch.io](https://alon5564.itch.io/messy-house-demo)
+* [formal-elements](formal-elements.md)
+
 
 ![d7316058-8e1c-4bec-b9b9-ba0b55839f74](https://github.com/alon-game/Messy-House/assets/73320761/52394f59-bf98-4e47-bd7a-105dc446235c)
 
@@ -64,9 +69,5 @@
 * תוצאת המשחק תהיה ניקוד של השחקן בהתאם לכמות הפריטים שסידר
 * תוצאת המשחק תלויה מעט במזל בהתאם לכמות המשאבים שהשחקן יקבל ומיקומם
 
-
-
-* [formal-elements](formal-elements.md)
-* [itch.io](https://alon5564.itch.io/messy-house-demo)
 
 
