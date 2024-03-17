@@ -16,6 +16,7 @@ TagManager:
   - Timer
   - laundry
   - Level Manager
+  - Audio
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,12 @@ public class PlayerPickUpDrop : MonoBehaviour
     [SerializeField] private Transform objectGrabPointTransform; 
     [SerializeField] private LayerMask pickUpLayerMask; // Defining the layer of objects that can be picked up and drop
     private ObjectGrabbable objectGrabbable;
+    private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void OnEnable()
     {
@@ -33,12 +39,14 @@ public class PlayerPickUpDrop : MonoBehaviour
                     if (raycastHit.transform.TryGetComponent(out objectGrabbable))
                     {
                         objectGrabbable.Grab(objectGrabPointTransform); // grab the object
+                        audioManager.PlaySFX(audioManager.garb);
                     }
                 }
             } else
             {
                 // Currently carrying something, drop
                 objectGrabbable.Drop(); // drop the object
+                audioManager.PlaySFX(audioManager.drop);
                 objectGrabbable = null; // reset for the next object
 
             }

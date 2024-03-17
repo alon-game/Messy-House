@@ -21,10 +21,6 @@ public class ObjectGrabbable : MonoBehaviour
         objectRigidbody.useGravity = false; // disable object gravity when grabbing
         if (SceneManager.GetActiveScene().name == "Tutorial")
         {
-            if (gameObject.name == "Cola Can")
-            {
-                
-            }
             objectArrow.GetComponent<MeshRenderer>().enabled = false; // disable object arrow Mesh and enable placement arrow Mesh for tutorial mode
             placementArrow.GetComponent<MeshRenderer>().enabled = true;
         }

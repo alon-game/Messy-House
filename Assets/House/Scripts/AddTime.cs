@@ -6,11 +6,15 @@ public class AddTime : MonoBehaviour
 {
     [SerializeField] GameObject feedbackMessageUI; // Feedback message when the player gets extra time
     private Timer timer;
+    private AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        timer = FindObjectOfType<Timer>();
+        timer = GameObject.FindGameObjectWithTag("Level Manager").GetComponent<Timer>();
+        //timer = FindObjectOfType<Timer>();
         feedbackMessageUI.SetActive(false); // disable feedback message
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,6 +24,7 @@ public class AddTime : MonoBehaviour
             timer.AddTime(30f);
             gameObject.SetActive(false);
             feedbackMessageUI.SetActive(true); // Enable the feedback message for the player
+            audioManager.PlaySFX(audioManager.extraTime);
             Invoke("SetInactiveUI", 2f); // Disable the feedback message afer 2 seconds
         }
     }

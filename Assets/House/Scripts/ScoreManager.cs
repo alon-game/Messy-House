@@ -69,6 +69,8 @@ public class ScoreManager : MonoBehaviour
     private static int score = 0; // Score field
     private Timer timer;
     private PauseMenu pauseMenu;
+    private AudioManager audioManager;
+
 
     void Start()
     {
@@ -77,6 +79,8 @@ public class ScoreManager : MonoBehaviour
         panel.SetActive(false);
         ResetScore(); // reset the score
         timer = GetComponent<Timer>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
     }
 
     private void Update()
